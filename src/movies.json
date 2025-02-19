@@ -1,0 +1,82 @@
+[
+  {
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "genre": ["Drama"],
+    "director": "Frank Darabont",
+    "actors": ["Tim Robbins", "Morgan Freeman"],
+    "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+  },
+  {
+    "title": "The Godfather",
+    "year": 1972,
+    "genre": ["Crime", "Drama"],
+    "director": "Francis Ford Coppola",
+    "actors": ["Marlon Brando", "Al Pacino"],
+    "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+  },
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "genre": ["Action", "Crime", "Drama"],
+    "director": "Christopher Nolan",
+    "actors": ["Christian Bale", "Heath Ledger"],
+    "plot": "When the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological tests of his ability to fight injustice."
+  },
+  {
+    "title": "12 Angry Men",
+    "year": 1957,
+    "genre": ["Drama"],
+    "director": "Sidney Lumet",
+    "actors": ["Henry Fonda", "Lee J. Cobb"],
+    "plot": "A jury of 12 men must decide the fate of a young man accused of murder, where their decision must be unanimous."
+  },
+  {
+    "title": "Schindler's List",
+    "year": 1993,
+    "genre": ["Biography", "Drama", "History"],
+    "director": "Steven Spielberg",
+    "actors": ["Liam Neeson", "Ben Kingsley"],
+    "plot": "In Nazi Germany during World War II, industrialist Oskar Schindler uses his connections to save the lives of over a thousand Jewish refugees by employing them in his factories."
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "genre": ["Action", "Adventure", "Drama"],
+    "director": "Peter Jackson",
+    "actors": ["Elijah Wood", "Viggo Mortensen"],
+    "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army, while Frodo and Sam continue their perilous journey to Mordor to destroy the One Ring."
+  },
+  {
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "genre": ["Crime", "Drama"],
+    "director": "Quentin Tarantino",
+    "actors": ["John Travolta", "Uma Thurman"],
+    "plot": "The lives of two hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption."
+  },
+  {
+    "title": "The Good, the Bad and the Ugly",
+    "year": 1966,
+    "genre": ["Western"],
+    "director": "Sergio Leone",
+    "actors": ["Clint Eastwood", "Eli Wallach"],
+    "plot": "During the American Civil War, a mysterious stranger, a Mexican outlaw, and a ruthless mercenary embark on a treasure hunt for a fortune in Confederate gold."
+  },
+  {
+    "title": "The Lion King",
+    "year": 1994,
+    "genre": ["Animation", "Adventure", "Drama"],
+    "director": ["Roger Allers", "Rob Minkoff"],
+    "actors": ["Matthew Broderick", "Jeremy Irons"],
+    "plot": "A young lion prince flees his kingdom after his uncle murders his father and takes over. Years later, the prince returns to reclaim his rightful throne."
+  },
+  {
+    "title": "Forrest Gump",
+    "year": 1994,
+    "genre": ["Drama", "Romance"],
+    "director": "Robert Zemeckis",
+    "actors": ["Tom Hanks", "Robin Wright"],
+    "plot": "The life and times of a man with a low IQ, who witnesses some of the most momentous events in the 20th century."
+  }
+]

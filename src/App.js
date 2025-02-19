@@ -1,9 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Search from './Components/search.jsx';
 
-function App() {
+const App = () => {
   return (
-    
+    <div className="App">
+      <header className="App-header">
+        <div class="container">
+          <Search />
+        </div>
+      </header>
+    </div>
   );
 }
 
