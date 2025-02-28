@@ -4,13 +4,10 @@ import movies from '../movies.json'
 const Search = () => {
   const [searchInput, setSearchInput] = useState('');
   const [result, setResult] = useState('');
+  const titles = movies.map(movie => movie.title);
 
   const handleChange = (event) => {
     setSearchInput(event.target.value);
-  }
-
-  const handleClick = () => {
-    const titles = movies.map(movie => movie.title);
     const newRegex = new RegExp(searchInput, 'i');
     setResult(titles.filter(title => title.match(newRegex)));
   }
@@ -31,10 +28,6 @@ const Search = () => {
 
       <div class="row">
         <output>{result}</output>
-      </div>
-
-      <div class="row">
-        <button class="btn btn-primary" onClick={handleClick}>Search</button>
       </div>
     </>
   )
