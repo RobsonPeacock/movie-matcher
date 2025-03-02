@@ -6,6 +6,19 @@ const Search = () => {
   const [result, setResult] = useState('');
   const titles = movies.map(movie => movie.title);
 
+  const fetchData = async () => {
+    const url = process.env.REACT_APP_API_URL;
+    const options = {
+      method: 'GET',
+      headers: {
+        accept: 'application/json',
+        Authorization: process.env.REACT_APP_API_READ_ACCESS_TOKEN
+      }
+    };
+
+    await fetch(url, options)
+  }
+
   const handleChange = (event) => {
     setSearchInput(event.target.value);
     const newRegex = new RegExp(searchInput, 'i');
