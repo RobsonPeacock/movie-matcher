@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import movies from '../movies.json'
 
 const Search = () => {
   const [searchInput, setSearchInput] = useState('');
   const [result, setResult] = useState('');
-  const titles = movies.map(movie => movie.title);
 
-  const fetchData = async () => {
-    const url = process.env.REACT_APP_API_URL;
+  const fetchData = async (value) => {
+    const queryString = value;
+    const url = `${process.env.REACT_APP_API_URL}?query=${queryString}&language=en`;
     const options = {
       method: 'GET',
       headers: {
@@ -16,13 +15,15 @@ const Search = () => {
       }
     };
 
-    await fetch(url, options)
+    const res = await fetch(url, options)
+    return res.json()
   }
 
-  const handleChange = (event) => {
-    setSearchInput(event.target.value);
-    const newRegex = new RegExp(searchInput, 'i');
-    setResult(titles.filter(title => title.match(newRegex)));
+  const handleChange = async (value) => {
+    setSearchInput(value);
+    const data = await fetchData(value);
+    const titles = data.results.map(movie => movie.title);
+    setResult(titles);
   }
 
   return (
@@ -34,7 +35,7 @@ const Search = () => {
           name="name" 
           size="10" 
           class="form-control" 
-          onChange={handleChange}
+          onChange={(e) => handleChange(e.target.value)}
           required 
         />
       </div>
