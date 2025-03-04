@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SearchResults from './searchResults';
 
 const Search = () => {
   const [searchInput, setSearchInput] = useState('');
@@ -41,7 +42,7 @@ const Search = () => {
       </div>
 
       <div class="row">
-        <output>{result}</output>
+        <SearchResults results={result} />
       </div>
     </>
   )
